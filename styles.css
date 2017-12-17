@@ -1,3 +1,7 @@
+#pagewrap {
+  background-color: white;
+}
+
 footer {
   background-color: #47c9af;
 }
@@ -40,5 +44,9 @@ header h1 {
 }
 
 #mig {
-  padding-top: 25px;
+  padding-top: 45px;
+}
+
+#introduktion p {
+  text-align: center;
 }
