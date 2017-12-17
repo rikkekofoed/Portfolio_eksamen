@@ -1,0 +1,22 @@
+footer {
+  background-color: #47c9af;
+}
+
+footer p {
+  color: white;
+  padding: 7px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+h1 {
+  font-family: 'Josefin Slab', serif;
+  color: #47c9af;
+  text-align: center;
+  font-size: 3em;
+}
