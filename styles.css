@@ -20,3 +20,14 @@ h1 {
   text-align: center;
   font-size: 3em;
 }
+
+#rikke {
+    display: block;
+    margin: auto;
+    width: 25%;
+    border-radius: 25px;
+}
+
+#mig {
+  padding-top: 25px;
+}
