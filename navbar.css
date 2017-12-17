@@ -1,3 +1,5 @@
+/* Navbar til desktop */
+
 li {
     display: inline;
 }
@@ -15,6 +17,7 @@ ul a {
   padding: 15px;
   line-height: 50px;
 }
+
 .active a {
   background-color: white;
   color: #47c9af;
