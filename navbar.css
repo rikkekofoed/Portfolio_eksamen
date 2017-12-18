@@ -1,3 +1,76 @@
+
+li {
+    display: none;
+}
+
+ul {
+  list-style-type: none;
+  background-color: #47c9af;
+}
+
+ul a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  color: white;
+  padding: 15px;
+  line-height: 50px;
+}
+
+.active a {
+  background-color: white;
+  color: #47c9af;
+}
+
+a:hover {
+  background-color: #288a77;
+  color: white;
+}
+
+.burgermenu {
+        position: relative;
+        display: block;
+        z-index:10;
+        }
+
+    .burgerknap {
+        width: 55px;
+        height: 55px;
+        background-color: #47c9af;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        position:relative;
+        left:0;
+    }
+
+    .burgerDD {
+        display: none;
+        position: absolute;
+        background-color: #47c9af;
+        min-width: 200px;
+        z-index: 1;
+    }
+
+    .burgerDD a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: #000;
+    }
+
+    .burgerDD a:hover {
+        background-color: #288a77;
+        color: #fff;
+    }
+
+.burgermenu:hover .burgerDD {
+        display: block;
+        margin:auto;
+}
+
+  @media screen and (min-width: 768px) {
+
 /* Navbar til desktop */
 
 li {
@@ -26,4 +99,10 @@ ul a {
 a:hover {
   background-color: #288a77;
   color: white;
+}
+
+.burgermenu {
+  display: none;
+}
+
 }
