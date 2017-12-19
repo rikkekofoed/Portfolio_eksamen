@@ -101,3 +101,13 @@ a {
     margin: auto;
     max-width: 100%;
   }
+
+.top {
+  display: block;
+  text-align: center;
+}
+
+#arbejdet {
+  display: block;
+  text-align: center;
+}
