@@ -77,3 +77,21 @@ a {
   color: #288a77;
   padding: 3px;
 }
+
+#shutterspeed {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+#aperture {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+
+#iso {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
