@@ -118,3 +118,9 @@ a {
   margin: auto;
   max-width: 100%;
 }
+
+#bmc_model {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
