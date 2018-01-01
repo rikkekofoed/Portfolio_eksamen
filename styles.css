@@ -57,6 +57,13 @@ header h1 {
   font-size: 3.5em;
 }
 
+q {
+  font-size: 0.7em;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  display: block;
+}
+
 #rikke {
     display: block;
     margin: auto;
@@ -120,6 +127,18 @@ a {
 }
 
 #bmc_model {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+#virktyper {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+#værdikæde {
   display: block;
   margin: auto;
   max-width: 100%;
