@@ -42,12 +42,13 @@
       <h3>HTML</h3>
       <p>HTML står for <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage og det er det "sprog" man skriver hjemmesider i, når man sætter den basale struktur op.</p>
       <p>Det er i HTML at man bygger en hjemmesides skelet op med f.eks. navigationsbar, header, footer, overskrifter og sections.</p>
+      <p>HTML består overordnet set af to dele: en head og en body. I head'en (ikke at forveksle med en header) placeres alt det man ikke ser når man besøger en webside.<br>Det gælder f.eks. metatags og links til stylesheets osv.<br>I body'en placeres alt indholdet så, altså alt hvad man umiddelbart ser på selve hjemmesiden, skal placeres her. Det gælder for alt tekst, billeder og f.eks. også en navbar.</p>
       <a class="top" href="#top">Til toppen</a>
     </section>
     <section id="css">
       <h3>CSS</h3>
-      <p>CSS står for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets og det er det "sprog" man bruger til at style sin HTML, altså bestemme, hvordan skelettet ser ud.</p>
-      <p>Hvis man tænker på HTML som skelettet på et menneske, vil CSS være huden på mennesket. Det er i CSS man bestemmer skrifttypen, farverne, skriftstørrelsen og meget mere.<br>Det er også i CSS at man kan positionere sit indhold, f.eks. i form af Flexbox eller CSS Grids.</p>
+      <p>CSS står for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets og det er det "sprog" man bruger til at style sin HTML og altså bestemme hvordan skelettet ser ud.</p>
+      <p>Hvis man tænker på HTML som skelettet på et menneske, vil CSS være huden på mennesket. Det er i CSS man bestemmer skrifttypen, farverne, skriftstørrelsen og meget mere.<br>Det er også i CSS at man kan positionere sit indhold, f.eks. i form af Flexbox eller CSS Grids.<br>Den måde vi primært har arbejdet med positionering af indhold er gennem CSS Grids, som jeg kommer ind på senere.</p>
       <a class="top" href="#top">Til toppen</a>
     </section>
     <section id="responsive">
@@ -56,14 +57,20 @@
     </section>
     <section id="versioner">
       <h3>Versionsstyring</h3>
+        <p>Man bruger versionsstyring til at sikre, at man altid kan gå tilbage til en anden version, hvis der skulle ske en fejl med det projekt man er i gang med.<br>Det kan være meget simpelt at versionsstyre ved f.eks. navngivning af mapper og filer med dertilhørende noter omkring ændringerne. Man kan altså gøre det manuelt.<br>Langt de fleste vælger dog at bruge et Version Control System (VCS), hvor der er en software der automatisk går ind og holder styr på forskellene mellem versioner.<br>En af de meget udbredte systemer, og den vi er blevet introduceret til i undervisningen, er Git-protekollen, der altså er et versionsstyrings system.<br>Det er muligt selv at oprette en Git-server, men man kan også sagtens bruge en online tjeneste som f.eks. Github.<br>Github er den tjeneste vi er blevet introduceret til, og som vi bruger til f.eks. vores projekter.</p>
+        <h4>Github</h4>
+          <p>GitHub fungerer som en online server til versionsstyring med Git - så behøver man ikke selv oprette en.<br>GitHub er blevet meget udbredt blandt webudviklere, og bruges i dag også som en slags portfolio for ens kode.<br>Github kan bruges via kommandolinjen, eller som langt de fleste vælger via GitHub Desktop.</p>
+          <p>GitHub fungerer ved, at man opretter et <b>repository</b> som er en slags projektmappe, hvori alle ens filer for projektet ligger.<br>Efterhånden som man får lavet noget på sit projekt <b>committer</b> man, og det fungerer ligesom hvis man gemmer en fil på traditionel vis<br>med den funktionalitet at man kan gå tilbage til tidligere versioner.<br>Det kan også være en god idé at lave en ny <b>branch</b> som er en slags parallel version af ens <b>master branch</b> som er den branch der gælder.<br>På den nye branch kan man altså lave ændringer, uden at de berører ens master.<br>Når man er ved at være ved vejs ende kan man lave en <b>pull request</b> hvor man egentlig vil have forslag til en ny version, med rettelser og alt det der.<br>Der kan man også se hvilke <b>diffs</b> der er, hvilken betyder hvilke forskelle der er mellem to commits.<br>Når man er tilfreds med det kan man <b>merge</b> det hele sammen, og det betyder at man samler ændringer i én branch med en anden branch.</p>
+          <p>GitHub gør det også ret nemt at arbejde flere sammen om et projekt, netop på grund af den måde den versionsstyrer på.<br>Vi bruger som sagt GitHub når vi laver projekter, hvilket vil sige, at koden til denne portfolio også er at finde på GitHub.<br><a href="https://github.com/rikkekofoed/Portfolio_eksamen">Du kan finde det repository her</a>
       <a class="top" href="#top">Til toppen</a>
     </section>
     <section id="grids">
-      <h3>CSS Grids</h3>
+      <h3>CSS Grid Model</h3>
       <a class="top" href="#top">Til toppen</a>
     </section>
     <section id="frameworks">
       <h3>Frameworks</h3>
+        <p>
       <a class="top" href="#top">Til toppen</a>
     </section>
     <footer>
