@@ -37,6 +37,7 @@
     </nav>
     <section class="intro">
       <h1>Interaktionsudvikling</h1>
+        <p>Til dette kerneområde har jeg brugt det oplægsmateriale der er gjort tilgængeligt på Fronter som kilder, samt mine egne notater fra undervisningen.<br>Andre kilder vil blive præciseret nærmere.</p>
     </section>
     <section id="html">
       <h3>HTML</h3>
@@ -49,10 +50,19 @@
       <h3>CSS</h3>
       <p>CSS står for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets og det er det "sprog" man bruger til at style sin HTML og altså bestemme hvordan skelettet ser ud.</p>
       <p>Hvis man tænker på HTML som skelettet på et menneske, vil CSS være huden på mennesket. Det er i CSS man bestemmer skrifttypen, farverne, skriftstørrelsen og meget mere.<br>Det er også i CSS at man kan positionere sit indhold, f.eks. i form af Flexbox eller CSS Grids.<br>Den måde vi primært har arbejdet med positionering af indhold er gennem CSS Grids, som jeg kommer ind på senere.</p>
+      <p>Man arbejder typisk med CSS i et seperat dokument ift. sit HTML-dokument, og man beder HTML-dokumentet om at hente CSS-filen (det sker i head).<br>Det er også muligt at bruge CSS direkte i sin HTML-fil, ved at bruge style tagget i head sektionen, eller man kan bruge inline styling, hvor man styler direkte på et tag.<br>De sidste to muligheder skal bruges så lidt som muligt, da man ellers blander strukturen fra HTML'en sammen med stylingen fra CSS.</p>
       <a class="top" href="#top">Til toppen</a>
     </section>
     <section id="responsive">
-      <h3>Responsive web design</h3>
+      <h3>Layout strategier</h3>
+        <h4>Statisk layout</h4>
+          <p>Det statiske layout var dominerende i de tidlige år i www's historie. Her baserede man sit layout på faste mål, og derfor fungerede layoutet typisk ikke på andre skærmstørrelser end den tiltænkte (i hvert fald ikke særlig godt.)<br>Da layoutet ikke ændrede sig efter skærmstørrelser, ville man se luft på en for stor skørm, mens der blev zoomet på en mindre skærm.<br>Man bruger ikke statisk layout længere, da man i dag arbejder med mange skærmtyper.</p>
+        <h4>Fluid webdesign</h4>
+          <p>Her arbejder man med elementer der tilpasser sig den bredde der er på skærmen. Man angiver ikke bredder i faste mål, men de angives i relative mål f.eks. % som er meget udbredt.<br>Det giver en bedre brugeroplevelse end den statiske tilgang, da indholdet som sagt tilpasser sig.<br>Fluid webdesign bliver ofte brugt når indholdet og funktionaliteten er mere vigtigt end designet.</p>
+        <h4>Adaptivt layout</h4>
+          <p>Den adaptive tilgang bruges mest hvis man har en række statiske layouts som man gerne vil gøre nogenlunde responsive uden at skrive alt om.<br>Der er her tale om en mellemting mellem et statisk layout og et fuldt responsivt layout.<br>Det adaptive layout består af en række statiske layouts, som styres af @mediaqueries.<br>Rammer en skærmstørrelse ikke størrelsen på breakpointet, kommer problematikken med for meget eller for lidt plads igen, ligesom med det statiske layout.<br>Man bruger ikke rigtig det adaptive layout hvis man har muligheden for at gøre det responsivt.</p>
+        <h4>Responsivt layout</h4>
+          <p>Det responsive layout er dagens standard, fordi det er forholdsvis nemt at have med at gøre samtidig med at det passer på langt de fleste skærmstørrelser i dag.<br>Det består nemlig typisk af fluid webdesign (med de relative bredder) og derudover nogle regler, som ændrer layoutet efter skærmstørrelse.<br>Det vil sige, at elementerne tilpasser sig bredden hvis skærmstørrelsen ikke rammer breakpointet helt præcist.<br>Reglerne bliver styret af @media</p>
       <a class="top" href="#top">Til toppen</a>
     </section>
     <section id="versioner">
@@ -66,11 +76,16 @@
     </section>
     <section id="grids">
       <h3>CSS Grid Model</h3>
+        <p>En splinterny måde at positionere sit indhold i CSS. Der har aldrig været en rigtig god måde at gøre dette på, og derfor har de eksisterende funktioner ofte været brugt til mere end de burde.<br>F.eks. fungerer Flexbox kun i en dimension, hvor CSS grid fungerer i to dimensioner (både vertikalt og horisontalt).<br>Det er super nemt at arbejde med, og er et skridt på vejen til at skabe responsive websites rimelig nemt.<br>Det er som sagt meget nyt, og derfor er der meget jeg overhovedet ikke har lært endnu, men det basale er at få sat det op.<br>Man kan også sagtens have grids inden i et grid, og det er på ingen måde besværligt at bruge.</p>
+        <p>Man sætter bare en display:grid op i den container man gerne vil have (f.eks. en pagewrap), og derefter sætter man grid-template-colums og grid-template-rows for at definere hvor mage kolonner og rækker man gerne vil have.<br>Brug fr (fractions) som betyder dele, hvilket gør det nemt at skalere det op og ned i skærmstørrelser.</p>
+        <p>Der er så forskellige måder at sætte det op på, men grid-area er det jeg synes er nemmest.<bR>Man giver hver del et grid-area og så der hvor man har det andet laver man en grid-template-areas hvor man angiver de forskellige areas alt efter hvordan man vil have det til at se ud.</p>
       <a class="top" href="#top">Til toppen</a>
     </section>
     <section id="frameworks">
       <h3>Frameworks</h3>
-        <p>
+        <p>Det er en samling af standardiserede kodeelementer som man kan bruge til at opbygge layout og funktionalitet hurtigt og effektivt.<br>Man slipper for at lave alt koden fra bunden, fordi man kan hente elementer ind, der allerede er lavet.<br>Du skal heller ikke starte forfra hver gang, du koder en hjemmeside.</p>
+        <p>Fordelene ved at anvende frameworks er, at det bl.a. gør det nemmere at gøre en side brugervenligt, samtidig med at det som sagt går en del hurtigere at lave layout.<br>Ulemperne kan være, at hjemmesider der er lavet på framworks meget ofte har nogle fællestræk, og der kan derfor være svært at lave et unikt design, når du bruger framworks (det er i hvert fald vanskeligere).</p>
+        <p>Vi er blevet introduceret til Bootstrap, som nok er det mest populære framework for både HTML, CSS og Javascript, og som også har den fordel at den er responsiv (langt det meste i hvert fald).</p>
       <a class="top" href="#top">Til toppen</a>
     </section>
     <footer>
