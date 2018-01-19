@@ -203,3 +203,31 @@ a {
   margin: auto;
   max-width: 100%;
 }
+
+
+#mood {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+#wireframe {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+#citronmånelink {
+  display: block;
+  text-align: center;
+}
+
+#design {
+  display: block;
+  text-align: center;
+}
+
+#præsentation {
+  display: block;
+  text-align: center;
+}
